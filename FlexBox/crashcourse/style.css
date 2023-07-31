@@ -1,0 +1,134 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #1e81b0;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin-inline: auto;
+    padding: 3px;
+}
+
+.nav-bar {
+    background-color: #063970;
+}
+
+.nav-bar h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-container ul {
+    display: flex;
+}
+
+.nav-container li {
+    margin-left: 10px;
+}
+
+.nav-container li:hover {
+    color: #1e81b0;
+    transition: all 0.5s linear;
+}
+
+.header {
+    background-color: #035379;
+}
+
+.header-container {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container img {
+    margin-left: 10px;
+}
+
+.header-container h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.cards {
+    padding: 5px 0px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    background-color: #063970;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.card .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-header i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 10px;
+    }
+    .header-container {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-container h2 {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .header-container img {
+        height: 50%;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+}
